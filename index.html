@@ -19,33 +19,53 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mt-3">
-                    <form>
-                        <!--Nome e cognome-->
-                        <input type="text" name="name" id="nameUt" placeholder="Inserisci nome e cognome">
-                        <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
-                        <!--Selezionaìe percorso-->
-                        <select name="distUt" id="km">
-                            <option value="140">Torino - Milano</option>
-                            <option value="700"> Torino - Roma</option>
-                            <option value="330"> Torino - Bologna</option>
-                        </select>
-                        <!--<input type="number" id="age" placeholder="Inserisci la tua età">-->
-                        <!--Selezione fascia d'età Utente-->
-                        <select name="etaUt" id="etaUt"> 
-                            <option value="minorenne">Minorenne</option>
-                            <option value="maggiorenne">Maggiorenne</option>
-                            <option value="pensionato">Pensionato</option>
-                        </select>
-                        <button id="button" type="submit" class="btn btn-danger">Invia</button>
-                    </form>
-                </div>    
-            </div> 
-            <div>
-                <p id="prezzoFinale">Qui apparirà il tuo prezzo finale:</p>
-            </div>
+        <div class="main-img">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex justify-content-between">
+                        <div class="card col-6 mt-5 mb-5">
+                            <h3 class="card-header">Prenotazione</h3>
+                            <div class="card-body">
+                                <h5 class="card-title">Inserisci i tuoi dati</h5>
+                                <form>
+                                    <!--Nome e cognome-->
+                                    <label for="name" class="form-label mt-3">Inserisci nome e cognome</label>
+                                    <input type="text" name="name" id="nameUt" class="form-control">
+                                    <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
+                                    <!--Selezionaìe percorso-->
+                                    <label for="distance" class="form-label mt-3">Seleziona la tratta</label>
+                                    <select name="distUt" id="km" class="form-select">
+                                        <option value="160">Torino - Milano</option>
+                                        <option value="650"> Torino - Roma</option>
+                                        <option value="360"> Torino - Bologna</option>
+                                    </select>
+                                    <!--<input type="number" id="age" placeholder="Inserisci la tua età">-->
+                                    <!--Selezione fascia d'età Utente-->
+                                    <label for="age" class="form-label mt-3">Seleziona la fascia d'età</label>
+                                    <select name="etaUt" id="etaUt" class="form-select">
+                                        <option value="minorenne">Minorenne</option>
+                                        <option value="maggiorenne">Maggiorenne</option>
+                                        <option value="pensionato">Pensionato</option>
+                                    </select>
+                                    <button id="button" type="submit" class="btn btn-danger mt-3">Invia</button>
+                                </form>
+                            </div>    
+                        </div>
+                        <div class="card col-4 mt-5 mb-5">
+                            <h3 class="card-header">Il tuo biglietto</h3>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Nome e cognome</p>
+                                <p>Tratta</p>
+                                <p>Fascia d'età</p>
+                                <p>Prezzo intero</p>
+                                <p id="prezzoFinale">Prezzo scontato</p>
+                                <button id="confirm" class="btn btn-success mt-4">Conferma e prenota</button>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>     
         </div>        
     </main>
     <footer>

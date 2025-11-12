@@ -1,3 +1,6 @@
-.navbar-bg {
-    background-color: rgb(180, 237, 225) ;
+.main-img{
+    background-image: url(./img/1a0c0c680c6b53184d5fa0da41e15d14.jpg) ;
+    background-size: cover;
+    min-height: 700px;
+    
 }
