@@ -3,12 +3,19 @@ const button = document.querySelector('#button');
 const chilomUt = document.querySelector('#km');
 //const age = document.querySelector('#age');
 const age = document.getElementById("etaUt") ;
+//riferimento pagine
+const nameField= document.getElementById("nameUt") ;
+//riferimento da scrivere
+const nameReport= document.getElementById("nomeUtente")
+
 
 
 // Elaborazione
 button.addEventListener("click", function(event) {
     event.preventDefault();
 }) ;
+
+
 
 /*button.addEventListener("click", function(){
     let finalPrice = null ;
@@ -39,7 +46,10 @@ button.addEventListener("click", function () {
     } else if ( eta == "pensionato") {
         finalPrice = price - (price/100) * 40 ;
     }
+    nameReport.innerText = nameField.value ;
     console.log(finalPrice)
     document.querySelector("#prezzoFinale").innerText= `Il prezzo finale è € ${finalPrice}` ;
 })
+
+
 
