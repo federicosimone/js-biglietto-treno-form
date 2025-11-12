@@ -9,31 +9,44 @@
 </head>
 <body>
     <header>
-        <h1>Biglietto del treno </h1>
+        <nav class="navbar bg-body-tertiary navbar-bg">
+            <div class="container">
+                <a class="navbar-brand " href="#">
+                    <img src="./img/train.png" alt="Bootstrap" width="30" height="30">
+                    <h2 class="d-inline align-bottom">FedeTrainlines</h2>
+                </a>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container">
-            <form>
-                <input type="text" name="name" id="nameUt" placeholder="Inserisci nome e cognome">
-                <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
-                <select name="distUt" id="km">
-                    <option value="140">Torino - Milano</option>
-                    <option value="700"> Torino - Roma</option>
-                    <option value="330"> Torino - Bologna</option>
-                </select>
-                <!--<input type="number" id="age" placeholder="Inserisci la tua età">-->
-                <select name="etaUt" id="etaUt"> 
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="pensionato">Pensionato</option>
-                </select>
-                <button id="button" type="submit" class="btn btn-danger">Invia</button>
-            </form>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <form>
+                        <!--Nome e cognome-->
+                        <input type="text" name="name" id="nameUt" placeholder="Inserisci nome e cognome">
+                        <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
+                        <!--Selezionaìe percorso-->
+                        <select name="distUt" id="km">
+                            <option value="140">Torino - Milano</option>
+                            <option value="700"> Torino - Roma</option>
+                            <option value="330"> Torino - Bologna</option>
+                        </select>
+                        <!--<input type="number" id="age" placeholder="Inserisci la tua età">-->
+                        <!--Selezione fascia d'età Utente-->
+                        <select name="etaUt" id="etaUt"> 
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="pensionato">Pensionato</option>
+                        </select>
+                        <button id="button" type="submit" class="btn btn-danger">Invia</button>
+                    </form>
+                </div>    
+            </div> 
+            <div>
+                <p id="prezzoFinale">Qui apparirà il tuo prezzo finale:</p>
+            </div>
         </div>        
-        <div>
-            <p id="prezzoFinale">Qui apparirà il tuo prezzo finale:</p>
-        </div>
-
     </main>
     <footer>
 
