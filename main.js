@@ -1,6 +1,7 @@
 // Dati di input 
 const button = document.querySelector('#button');
 const chilomUt = document.querySelector('#km');
+const confButton = document.getElementById("confirm")
 //const age = document.querySelector('#age');
 const age = document.getElementById("etaUt") ;
 //riferimento pagine
@@ -56,9 +57,14 @@ button.addEventListener("click", function () {
     distReport.innerText = `${distField.value} Km ` ;
     ageReport.innerText= ageField.value;
     abbUtReport.innerText= abbUtField.value;
+
+    
     console.log(finalPrice)
     document.querySelector("#prezzoFinale").innerText= `€ ${finalPrice.toFixed(2)}` ;
 })
+
+
+
 
 
 

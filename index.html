@@ -10,13 +10,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary navbar-bg">
-            <div class="container">
-                <a class="navbar-brand " href="#">
-                    <img src="./img/Logo_Fede_Trainlines.png" alt="Bootstrap" width="50" height="50" class="me-3">
-                    <h2 class="d-inline align-bottom">FedeTrainlines</h2>
+        <nav class="navbar bg-body-tertiary navbar-bg pb-1">
+            <div class="container-fluid">
+                <a class="navbar-brand align-center " href="#">
+                    <img src="./img/Logo_Fede_Trainlines.png" alt="Bootstrap" width="70" height="70" class="d-inline-block align-text-center">
+                    <h2 class="d-inline-block ms-3">FedeTrainlines</h2>
                 </a>
             </div>
+            
         </nav>
     </header>
     <main>
@@ -31,10 +32,10 @@
                                 <form>
                                     <!--Nome e cognome-->
                                     <label for="name" class="form-label mt-3">Inserisci nome e cognome</label>
-                                    <input type="text" name="name" id="nameUt" class="form-control">
+                                    <input type="text" name="name" id="nameUt" class="form-control" placeholder="Nome Cognome">
                                     <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
                                     <label for="abbonamento" class="form-label mt-3">Inserisci il tuo numero di abbonamento</label>
-                                    <input type="text" name="abbonamento" id="abbonamento" class="form-control" placeholder="Deve contenere 5 cifre">
+                                    <input type="text" name="abbonamento" id="abbonamento" class="form-control" maxlength="5" size="5" placeholder="Deve contenere 5 cifre">
                                     <!--Selezionaìe percorso-->
                                     <label for="distance" class="form-label mt-3">Seleziona la tratta</label>
                                     <select name="distUt" id="km" class="form-select">
