@@ -5,8 +5,14 @@ const chilomUt = document.querySelector('#km');
 const age = document.getElementById("etaUt") ;
 //riferimento pagine
 const nameField= document.getElementById("nameUt") ;
+const distField= document.getElementById("km") ;
+const ageField = document.getElementById("etaUt") ;
+const abbUtField= document.getElementById("abbonamento");
 //riferimento da scrivere
-const nameReport= document.getElementById("nomeUtente")
+const nameReport= document.getElementById("nomeUtente");
+const distReport= document.getElementById("tratta");
+const ageReport= document.getElementById("fasciaEta") ;
+const abbUtReport= document.getElementById("numeroAbb")
 
 
 
@@ -39,16 +45,19 @@ button.addEventListener("click", function () {
     const eta = age.value;
     let price = km * 0.21 ;
     //debugger
-    if (eta == "minorenne") {
+    if (eta == "Minorenne") {
         finalPrice = price - (price / 100) *20 ;
-    } else if (eta == "maggiorenne" ){
+    } else if (eta == "Maggiorenne" ){
         finalPrice = price ;   
-    } else if ( eta == "pensionato") {
+    } else if ( eta == "Pensionato") {
         finalPrice = price - (price/100) * 40 ;
     }
     nameReport.innerText = nameField.value ;
+    distReport.innerText = `${distField.value} Km ` ;
+    ageReport.innerText= ageField.value;
+    abbUtReport.innerText= abbUtField.value;
     console.log(finalPrice)
-    document.querySelector("#prezzoFinale").innerText= `Il prezzo finale è € ${finalPrice}` ;
+    document.querySelector("#prezzoFinale").innerText= `€ ${finalPrice.toFixed(2)}` ;
 })
 
 

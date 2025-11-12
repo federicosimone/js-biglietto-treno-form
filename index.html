@@ -25,14 +25,16 @@
                 <div class="row">
                     <div class="d-flex justify-content-between">
                         <div class="card col-6 mt-5 mb-5">
-                            <h3 class="card-header">Prenotazione</h3>
-                            <div class="card-body">
+                            <h3 class="card-header">Calcola il prezzo del tuo biglietto</h3>
+                            <div class="card-body bg-color">
                                 <h5 class="card-title">Inserisci i tuoi dati</h5>
                                 <form>
                                     <!--Nome e cognome-->
                                     <label for="name" class="form-label mt-3">Inserisci nome e cognome</label>
                                     <input type="text" name="name" id="nameUt" class="form-control">
                                     <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
+                                    <label for="abbonamento" class="form-label mt-3">Inserisci il tuo numero di abbonamento</label>
+                                    <input type="text" name="abbonamento" id="abbonamento" class="form-control" placeholder="Deve contenere 5 cifre">
                                     <!--Selezionaìe percorso-->
                                     <label for="distance" class="form-label mt-3">Seleziona la tratta</label>
                                     <select name="distUt" id="km" class="form-select">
@@ -44,9 +46,9 @@
                                     <!--Selezione fascia d'età Utente-->
                                     <label for="age" class="form-label mt-3">Seleziona la fascia d'età</label>
                                     <select name="etaUt" id="etaUt" class="form-select">
-                                        <option value="minorenne">Minorenne</option>
-                                        <option value="maggiorenne">Maggiorenne</option>
-                                        <option value="pensionato">Pensionato</option>
+                                        <option value="Minorenne">Minorenne</option>
+                                        <option value="Maggiorenne">Maggiorenne</option>
+                                        <option value="Pensionato">Pensionato</option>
                                     </select>
                                     <button id="button" type="submit" class="btn btn-danger mt-3">Invia</button>
                                 </form>
@@ -54,15 +56,17 @@
                         </div>
                         <div class="card col-4 mt-5 mb-5">
                             <h3 class="card-header">Il tuo biglietto</h3>
-                            <div class="card-body">
+                            <div class="card-body bg-color">
                                 <h5>Nome e Cognome</h5>
                                 <p id="nomeUtente">---</p>
+                                <h5>Abbonamento n°:</h5>
+                                <p id="numeroAbb">---</p>
                                 <h5>Tratta</h5>
-                                <p id="Tratta">---</p>
+                                <p id="tratta">---</p>
                                 <h5>Fascia d'Età</h5>
-                                <p id="FasciaEta">---</p>
-                                <h5>Prezzo scontato</h5>
-                                <p id="prezzoFinale">---</p>
+                                <p id="fasciaEta">---</p>
+                                <h5>Prezzo Finale</h5>
+                                <p id="prezzoFinale" class="fw-bold fs-5">---</p>
                                 <button id="confirm" class="btn btn-success mt-4">Conferma e prenota</button>
                             </div>
                         </div>
