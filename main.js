@@ -9,11 +9,13 @@ const nameField= document.getElementById("nameUt") ;
 const distField= document.getElementById("km") ;
 const ageField = document.getElementById("etaUt") ;
 const abbUtField= document.getElementById("abbonamento");
+const depUtField=document.getElementById("departureUt") ;
 //riferimento da scrivere
 const nameReport= document.getElementById("nomeUtente");
 const distReport= document.getElementById("tratta");
 const ageReport= document.getElementById("fasciaEta") ;
 const abbUtReport= document.getElementById("numeroAbb")
+const depUtReport = document.getElementById("partenza");
 
 
 
@@ -57,6 +59,7 @@ button.addEventListener("click", function () {
     distReport.innerText = `${distField.value} Km ` ;
     ageReport.innerText= ageField.value;
     abbUtReport.innerText= abbUtField.value;
+    depUtReport.innerText = depUtField.value ;
 
     
     console.log(finalPrice)

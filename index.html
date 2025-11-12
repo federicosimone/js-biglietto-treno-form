@@ -39,15 +39,19 @@
                                     <!--Selezionaìe percorso-->
                                     <label for="distance" class="form-label mt-3">Seleziona la tratta</label>
                                     <select name="distUt" id="km" class="form-select">
+                                        <option selected>Seleziona il percorso</option>
                                         <option value="160">Torino - Milano</option>
                                         <option value="650"> Torino - Roma</option>
                                         <option value="360"> Torino - Bologna</option>
                                     </select>
+                                    <label for="date" class="form-label mt-3">Seleziona data partenza</label>
+                                    <input type="date" name="departure" id="departureUt" class="form-select">
                                     <!--<input type="number" id="age" placeholder="Inserisci la tua età">-->
                                     <!--Selezione fascia d'età Utente-->
                                     <label for="age" class="form-label mt-3">Seleziona la fascia d'età</label>
                                     <select name="etaUt" id="etaUt" class="form-select">
-                                        <option value="Minorenne">Minorenne</option>
+                                        <option selected>Seleziona fascia d'età</option>
+                                        <option value="Minorenne">Minorenne </option>
                                         <option value="Maggiorenne">Maggiorenne</option>
                                         <option value="Pensionato">Pensionato</option>
                                     </select>
@@ -64,6 +68,8 @@
                                 <p id="numeroAbb">---</p>
                                 <h5>Tratta</h5>
                                 <p id="tratta">---</p>
+                                <h5>Data partenza</h5>
+                                <p id="partenza">---</p>
                                 <h5>Fascia d'Età</h5>
                                 <p id="fasciaEta">---</p>
                                 <h5>Prezzo Finale</h5>
