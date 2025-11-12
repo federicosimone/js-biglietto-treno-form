@@ -34,15 +34,15 @@
                                     <label for="name" class="form-label mt-3">Inserisci nome e cognome</label>
                                     <input type="text" name="name" id="nameUt" class="form-control" placeholder="Nome Cognome">
                                     <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
-                                    <label for="abbonamento" class="form-label mt-3">Inserisci il tuo numero di abbonamento</label>
+                                    <label for="abbonamento" class="form-label mt-3">Inserisci il tuo numero della tua FedeCARD</label>
                                     <input type="text" name="abbonamento" id="abbonamento" class="form-control" maxlength="5" size="5" placeholder="Deve contenere 5 cifre">
                                     <!--Selezionaìe percorso-->
-                                    <label for="distance" class="form-label mt-3">Seleziona la tratta</label>
+                                    <label for="distance" class="form-label mt-3">Seleziona il percorso</label>
                                     <select name="distUt" id="km" class="form-select">
                                         <option selected>Seleziona il percorso</option>
-                                        <option value="160">Torino - Milano</option>
-                                        <option value="650"> Torino - Roma</option>
-                                        <option value="360"> Torino - Bologna</option>
+                                        <option value="160">Torino (Tutte le stazioni) - Milano Centrale</option>
+                                        <option value="650"> Torino Porta Nuova- Roma Termini</option>
+                                        <option value="360"> Torino Porta Susa - Bologna Centrale </option>
                                     </select>
                                     <label for="date" class="form-label mt-3">Seleziona data partenza</label>
                                     <input type="date" name="departure" id="departureUt" class="form-select">
@@ -64,7 +64,7 @@
                             <div class="card-body bg-color">
                                 <h5>Nome e Cognome</h5>
                                 <p id="nomeUtente">---</p>
-                                <h5>Abbonamento n°:</h5>
+                                <h5>FedeCARD n°:</h5>
                                 <p id="numeroAbb">---</p>
                                 <h5>Tratta</h5>
                                 <p id="tratta">---</p>
