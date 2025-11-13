@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="./img/Logo_Fede_Trainlines.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <link rel="stylesheet" href="style.css">
@@ -31,24 +32,24 @@
                                 <h5 class="card-title">Inserisci i tuoi dati</h5>
                                 <form>
                                     <!--Nome e cognome-->
-                                    <label for="name" class="form-label mt-3">Inserisci nome e cognome</label>
+                                    <label for="name" class="form-label mt-3">Inserisci nome e cognome <i class="fa-solid fa-user"></i></label>
                                     <input type="text" name="name" id="nameUt" class="form-control" placeholder="Nome Cognome">
                                     <!--<input type="text" id="km" placeholder="Inserisci i chilometri">-->
-                                    <label for="abbonamento" class="form-label mt-3">Inserisci il tuo numero della tua FedeCARD</label>
+                                    <label for="abbonamento" class="form-label mt-3">Inserisci il tuo numero della tua FedeCARD <i class="fa-solid fa-address-card"></i></label>
                                     <input type="text" name="abbonamento" id="abbonamento" class="form-control" maxlength="5" size="5" placeholder="Deve contenere 5 cifre">
                                     <!--Selezionaìe percorso-->
-                                    <label for="distance" class="form-label mt-3">Seleziona il percorso</label>
+                                    <label for="distance" class="form-label mt-3">Seleziona il percorso <i class="fa-solid fa-train"></i></label>
                                     <select name="distUt" id="km" class="form-select">
                                         <option selected>Seleziona il percorso</option>
-                                        <option value="160">Torino (Tutte le stazioni) - Milano Centrale</option>
+                                        <option value="160"> Torino (Tutte le stazioni) - Milano Centrale</option>
                                         <option value="650"> Torino Porta Nuova- Roma Termini</option>
                                         <option value="360"> Torino Porta Susa - Bologna Centrale </option>
                                     </select>
-                                    <label for="date" class="form-label mt-3">Seleziona data partenza</label>
+                                    <label for="date" class="form-label mt-3">Seleziona data partenza <i class="fa-solid fa-calendar"></i></label>
                                     <input type="date" name="departure" id="departureUt" class="form-select">
                                     <!--<input type="number" id="age" placeholder="Inserisci la tua età">-->
                                     <!--Selezione fascia d'età Utente-->
-                                    <label for="age" class="form-label mt-3">Seleziona la fascia d'età</label>
+                                    <label for="age" class="form-label mt-3">Seleziona la fascia d'età <i class="fa-solid fa-user-tag"></i></label>
                                     <select name="etaUt" id="etaUt" class="form-select">
                                         <option selected>Seleziona fascia d'età</option>
                                         <option value="Minorenne"> 0 - 17 anni</option>
@@ -59,8 +60,8 @@
                                 </form>
                             </div>    
                         </div>
-                        <div class="card col-12 col-md-4 col-lg-4 mb-5">
-                            <h3 class="card-header">Il tuo biglietto</h3>
+                        <div class="card col-12 col-md-4 col-lg-4 mt-5 mb-5">
+                            <h3 class="card-header">Il tuo biglietto <i class="fa-solid fa-ticket"></i></h3>
                             <div class="card-body bg-color">
                                 <h5>Nome e Cognome</h5>
                                 <p id="nomeUtente">---</p>
