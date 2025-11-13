@@ -66,6 +66,9 @@ button.addEventListener("click", function () {
     document.querySelector("#prezzoFinale").innerText= `€ ${finalPrice.toFixed(2)}` ;
 })
 
+confButton.addEventListener("click", function(){
+    alert("Complimenti! Hai prenotato il tuo biglietto")
+})
 
 
 
