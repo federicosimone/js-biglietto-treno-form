@@ -64,11 +64,11 @@ button.addEventListener("click", function () {
     
     console.log(finalPrice)
     document.querySelector("#prezzoFinale").innerText= `€ ${finalPrice.toFixed(2)}` ;
-})
+}) ;
 
 confButton.addEventListener("click", function(){
-    alert("Complimenti! Hai prenotato il tuo biglietto")
-})
+    alert("Complimenti! Hai prenotato il tuo biglietto");
+}) ;
 
 
 
